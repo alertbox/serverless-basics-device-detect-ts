@@ -1,0 +1,45 @@
+{
+  "name": "basics-device-detect",
+  "version": "1.0.0",
+  "description": "Shows how to use Lambda@Edge function to detect the device and redirect to respective domain.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alertbox/serverless-examples-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alertbox/serverless-examples-ts/Issues"
+  },
+  "homepage": "https://github.com/alertbox/serverless-examples-ts#readme",
+  "private": false,
+  "keywords": [
+    "aws",
+    "lambda",
+    "edge",
+    "serverless",
+    "typescript",
+    "nodejs",
+    "examples",
+    "boilerplate"
+  ],
+  "author": "alertbox.inc@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "sls": "serverless",
+    "clean": "npm cache clean --force",
+    "build": "npm run clean && npm install",
+    "start": "npm run build && npm run start:dev",
+    "start:dev": "sls offline start -s dev",
+    "deploy": "npm run build && npm run deploy:beta",
+    "deploy:beta": "sls deploy -s beta -r ap-southeast-2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.213.1"
+  },
+  "devDependencies": {
+    "@types/node": "^9.6.0",
+    "@types/aws-sdk": "^2.7.0",
+    "@types/aws-lambda": "^0.0.34",
+    "serverless-offline": "^3.18.0",
+    "serverless-plugin-typescript": "^1.1.5"
+  }
+}
