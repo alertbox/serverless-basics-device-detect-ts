@@ -6,7 +6,7 @@ Serverless Node.js examples using TypeScript are organized into groups and desig
 
 1. Checkout the code and install dependencies
 ```shell
-sls create --template-url https://github.com/alertbox/serverless-device-detect-ts --path my-basics-device-detect-svc
+sls create --template-url https://github.com/alertbox/serverless-basics-device-detect-ts --path my-basics-device-detect-svc
 ```
 2. Compile and run example
 ```shell
